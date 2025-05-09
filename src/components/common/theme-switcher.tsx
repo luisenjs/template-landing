@@ -13,7 +13,7 @@ export default function ThemeSwitcher() {
     };
 
     return (
-        <button onClick={toggleTheme} className={css({ color: "red", transition: "all 0.5s" })}>
+        <button onClick={toggleTheme} className={css({ color: { base: "black", _dark: "white" }, transition: "all 0.5s" })}>
             {isDark ? <Sun /> : <Moon />}
         </button>
     );

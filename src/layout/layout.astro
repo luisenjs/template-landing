@@ -1,9 +1,14 @@
 ---
-import "../../styled-system/styles.css";
+import "../index.css";
 import { css } from "../../styled-system/css";
 import Navbar from "../components/ui/navbar/navbar.tsx";
 import Footer from "../components/ui/footer.tsx";
 import { BackToTop } from "../components/common/back-to-top.tsx";
+import es from "../dictionaries/landing-page/es.json";
+import en from "../dictionaries/landing-page/en.json";
+
+const { locale } = Astro.params;
+const dict = locale === "en" ? en : es;
 
 const poppins = "--font-poppins";
 const rubik = "--font-rubik";
@@ -16,12 +21,12 @@ const rubik = "--font-rubik";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body
-    class={`${poppins} ${rubik} ${css({ bg: "bgColor", transition: "all 0.5s" })}`}
+    class={`${poppins} ${rubik} ${css({ bg: { base: "white", _dark: "black" }, transition: "all 0.5s" })}`}
   >
     <Navbar client:load />
     <main class={`scroller ${css({ minHeight: "100vh" })}`}>
       <slot />
-      <Footer client:load />
+      <Footer client:load {...dict["footer"]} />
       <BackToTop client:load />
     </main>
   </body>

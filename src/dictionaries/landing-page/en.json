@@ -106,5 +106,17 @@
       "title": "READY TO START YOUR DIGITAL TRANSFORMATION?",
       "subtitle": "Let’s talk about how we can take your business to the next level",
       "backgroundImg": "/soporte.png"
+    },
+    "navbar": {
+        "nosotros": "About Us",
+        "servicios": "Services",
+        "proyectos": "Projects",
+        "clientes": "Clients",
+        "blog": "Blog",
+        "contacto": "Contact"
+    },
+    "footer": {
+        "description": "At Sudamericana de Software S.A., we create custom software, mobile applications, and innovative solutions to drive your company's digital transformation.",
+        "copyright": "© 2025 Sudamericana de Software S.A. All rights reserved."
     }
   }

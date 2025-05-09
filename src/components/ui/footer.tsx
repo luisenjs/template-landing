@@ -5,15 +5,17 @@ import LanguageSwitcher from "../common/languageSwithcher.tsx";
 
 type footerProps = {
     className?: string;
+    description: string;
+    copyright: string;
 };
 
-export default function Footer({ className = "" }: footerProps) {
+export default function Footer(contenido: footerProps) {
 
     return (
-        <footer className={className + footerStyles}>
+        <footer className={contenido.className + footerStyles}>
             <div className={"content"}>
                 <div>
-                    <p className={"description"}>{"HOLA"}</p>
+                    <p className={"description"}>{contenido.description}</p>
                 </div>
                 <div className="center">
                     <a href="/" className={"logo"}>
@@ -85,10 +87,10 @@ export default function Footer({ className = "" }: footerProps) {
 
 export const footerStyles = css({
     position: "relative",
-    backgroundColor: "sasfGrey",
-    color: "sasfWhite",
+    bg: "gray.900",
+    color: "white",
     padding: "3rem 0rem 1rem",
-
+    transition: "all 0.5s",
     "& .content": {
         display: "grid",
         gridTemplateColumns: "1fr",
@@ -122,7 +124,7 @@ export const footerStyles = css({
         gap: "1rem",
         marginTop: "1.5rem",
         "& .socialLink": {
-            color: "sasfWhite",
+            color: "white",
             transition: "opacity 0.2s",
 
             _hover: {

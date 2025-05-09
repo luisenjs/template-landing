@@ -21,7 +21,12 @@ export default function Navbar() {
                         })}
                     />
                 </a>
-                <section className="navOptions">
+                <section className={css({
+                    display: "flex",
+                    gap: 2,
+                    justifyContent: "center",
+                    alignItems: "center"
+                })}>
                     <ThemeSwitcher />
                     <LanguageSwitcher position="nav" />
                 </section>
