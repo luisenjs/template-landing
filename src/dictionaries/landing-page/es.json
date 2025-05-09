@@ -1,0 +1,110 @@
+{
+    "hero": {
+      "videosrc": "/background-landing.mp4",
+      "heading": "Transformamos tus ideas en soluciones tecnológicas que impulsan tu futuro."
+    },
+    "nuestrasSoluciones": {
+      "title": "Nuestras Soluciones Tecnológicas",
+      "subtitle": "Aportamos valor a tu empresa con servicios personalizados",
+      "imagesrc": "/services.png",
+      "watermark": "SOLUCIONES",
+      "services": [
+        {
+          "title": "Desarrollo de Software",
+          "description": "Desde aplicaciones web empresariales hasta sistemas complejos, nuestro equipo desarrolla software que impulsa tu negocio con tecnologías de última generación.",
+          "Icon": "code"
+        },
+        {
+          "title": "Fábrica de Software",
+          "description": "Un enfoque ágil y escalable para gestionar proyectos de desarrollo, garantizando eficiencia y calidad en cada fase.",
+          "Icon": "factory"
+        },
+        {
+          "title": "Aplicaciones Móviles",
+          "description": "Aplicaciones nativas y multiplataforma que ofrecen experiencias móviles excepcionales y fortalecen la relación con tus clientes.",
+          "Icon": "mobile"
+        },
+        {
+          "title": "Soluciones Tecnológicas",
+          "description": "Automatizamos procesos, mejoramos la toma de decisiones e implementamos soluciones que optimizan la productividad empresarial.",
+          "Icon": "settings"
+        }
+      ]
+    },
+    "partner": {
+      "title": "Somos tu socio tecnológico",
+      "subtitle": "Más que software, creamos soluciones",
+      "ofertas": [
+        {
+          "title": "Innovación continua",
+          "description": "Nos adaptamos a las últimas tendencias tecnológicas para ofrecer soluciones que evolucionen con las necesidades del mercado. Nuestra capacidad de innovar constantemente garantiza que cada proyecto aproveche lo mejor de la tecnología moderna, brindando resultados eficientes y vanguardistas.",
+          "imagesrc": "/innovacion.jpg",
+          "alt": "Persona con redes neuronales"
+        },
+        {
+          "title": "Equipo de expertos",
+          "description": "Contamos con un equipo multidisciplinario de profesionales altamente capacitados y apasionados por la tecnología. Nuestra experiencia colectiva nos permite abordar cada proyecto con un enfoque estratégico, asegurando que cada solución esté alineada con los objetivos de tu negocio.",
+          "imagesrc": "/expertos.jpeg",
+          "alt": "Equipo diverso en oficina"
+        },
+        {
+          "title": "Metodologías ágiles",
+          "description": "Implementamos metodologías ágiles para maximizar la eficiencia y flexibilidad en cada proyecto. Esto nos permite adaptarnos rápidamente a los cambios, garantizar entregas en tiempo récord y mejorar continuamente cada fase del desarrollo para obtener resultados óptimos.",
+          "imagesrc": "/agiles.jpg",
+          "alt": "Persona mirando visualización de datos"
+        },
+        {
+          "title": "Soporte personalizado",
+          "description": "Entendemos que cada cliente es único, por eso ofrecemos soporte especializado y adaptado a tus necesidades específicas. Nuestro compromiso es brindarte un acompañamiento cercano, asegurando que cualquier duda o requerimiento sea resuelto de manera rápida y efectiva.",
+          "imagesrc": "/soporte.jpeg",
+          "alt": "Reunión de negocios"
+        }
+      ]
+    },
+    "casos": {
+      "title": "Conoce algunos de los proyectos que hemos desarrollado",
+      "heading": "Casos de éxito",
+      "imagesrc": "/exito.png",
+      "watermark": "PROYECTOS",
+      "button": {
+        "link": "./proyectos",
+        "label": "Explorar proyectos"
+      }
+    },
+    "clientes": {
+      "title": "NUESTRA MAYOR /highlight SATISFACCIÓN/ ES VER A NUESTROS /highlight CLIENTES/ ALCANZAR EL /highlight ÉXITO/",
+      "clients": [
+        {
+          "name": "Claro",
+          "logo": "/logos/claro.svg",
+          "width": 120
+        },
+        {
+          "name": "Banco Guayaquil",
+          "logo": "/logos/bncguayaquil.svg",
+          "width": 140
+        },
+        {
+          "name": "Banco Bolivariano",
+          "logo": "/logos/bncbolivariano.svg",
+          "width": 140
+        },
+        {
+          "name": "TELCONET",
+          "logo": "/logos/telconet.svg",
+          "width": 120
+        },
+        {
+          "name": "DIFARE",
+          "logo": "/logos/difare.svg",
+          "width": 100
+        }
+      ]
+    },
+    "contact": {
+      "button":"Contáctanos",
+      "title": "¿LISTO PARA INICIAR TU TRANSFORMACIÓN DIGITAL?",
+      "subtitle": "Hablemos de como podemos llevar tu negocio al siguiente nivel",
+      "backgroundImg": "/soporte.png"
+    }
+  }

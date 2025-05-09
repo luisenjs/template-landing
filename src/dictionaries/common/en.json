@@ -1,0 +1,14 @@
+{
+    "navbar": {
+        "nosotros": "About Us",
+        "servicios": "Services",
+        "proyectos": "Projects",
+        "clientes": "Clients",
+        "blog": "Blog",
+        "contacto": "Contact"
+    },
+    "footer": {
+        "description": "At Sudamericana de Software S.A., we create custom software, mobile applications, and innovative solutions to drive your company's digital transformation.",
+        "copyright": "© 2025 Sudamericana de Software S.A. All rights reserved."
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "template-landing",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "prepare": "panda codegen",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.7",
+    "astro": "^5.7.12",
+    "js-cookie": "^3.0.5",
+    "lucide-react": "^0.508.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.53.6",
+    "@types/js-cookie": "^3.0.6"
+  }
+}

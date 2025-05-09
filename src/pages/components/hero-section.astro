@@ -1,0 +1,50 @@
+---
+import { css } from "../../../styled-system/css";
+
+const { videosrc, heading } = Astro.props;
+
+const heroStyles = css({
+    width: "100svw",
+    minHeight: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+
+    "& .heroVideo": {
+        position: "fixed",
+        top: 0,
+        right: 0,
+        width: "100svw",
+        height: "100svh",
+        objectPosition: "center",
+        objectFit: "cover",
+        zIndex: -2,
+    },
+});
+---
+
+<section class={heroStyles}>
+    <video
+        class="heroVideo"
+        width="320"
+        height="240"
+        autoplay
+        loop
+        muted
+        preload="auto"
+    >
+        <source src={videosrc} type="video/mp4" />
+    </video>
+    <div>
+        <h1
+            class={css({
+                fontWeight: 300,
+                color: "herotitle",
+                transition: "all 0.5s",
+            })}
+        >
+            {heading}
+        </h1>
+    </div>
+</section>
