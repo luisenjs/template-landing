@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "heading": "We transform your ideas into technological solutions that drive your future.",
+    "description": "At Sudamericana de Software S.A., we create custom software, mobile applications, and innovative solutions to drive your company's digital transformation."
+  },
+  "legend": {
+    "title": "With the right software, greate things happen",
+    "description": "Description"
+  },
+  "links": [
+    {
+      "label": "Product",
+      "status": true,
+      "href": "/#product-section"
+    },
+    {
+      "label": "Characteristics",
+      "status": true,
+      "href": "/#characteristics-section"
+    }
+  ],
+  "productos": {
+    "title": "Lo que ofrecemos",
+    "description": "Siempre apuntamos a resolver cada una de tus necesidades",
+    "benefits": [
+      {
+        "image": "/benef1.png",
+        "title": "Flujos que funcionan",
+        "description": "Optimiza cada proceso y mejora la eficiencia con flujos diseñados para funcionar sin interrupciones."
+      },
+      {
+        "image": "/benef2.png",
+        "title": "Solución integral",
+        "description": "Desde la estrategia hasta la ejecución, ofrecemos soluciones completas adaptadas a tus necesidades específicas."
+      },
+      {
+        "image": "/benef3.png",
+        "title": "Asistencia integral al cliente",
+        "description": "Te acompañamos en cada paso, brindando soporte personalizado y respuestas rápidas a tus inquietudes."
+      },
+      {
+        "image": "/benef4.png",
+        "title": "Redes de automatización",
+        "description": "Transforma la gestión de procesos con tecnología avanzada que automatiza tareas clave y potencia tu crecimiento."
+      }
+    ]
+  },
+  "navbar": {
+    "solicitarDemo": "Request Demo"
+  },
+  "footer": {
+    "description": "At Sudamericana de Software S.A., we create custom software, mobile applications, and innovative solutions to drive your company's digital transformation.",
+    "copyright": "© 2025 Sudamericana de Software S.A. All rights reserved."
+  }
+}

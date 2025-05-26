@@ -1,0 +1,53 @@
+@layer reset, base, tokens, recipes, utilities;
+
+@layer tokens {
+    :root {
+        /* Colores primarios */
+        --colors-sasf-black: #000;
+        --colors-sasf-white: #fff;
+        --colors-sasf-blue: #3A91E7;
+        --colors-sasf-blue-light: #62A9F0;
+        --colors-sasf-blue-dark: #2D74B6;
+        --colors-sasf-red: #FF4B68;
+        --colors-sasf-red-light: #FF7D94;
+        --colors-sasf-red-dark: #C83751;
+
+        /* Tema Light */
+        --colors-light-bg: #F7F9FC;
+        --colors-light-text: #1E2A38;
+        --colors-light-border: #D3E3FC;
+
+        /* Tema Dark */
+        --colors-dark-bg: #1E2A38;
+        --colors-dark-text: #F7F9FC;
+        --colors-dark-border: #4A6FA5;
+    }
+}
+
+@layer base {
+    ::-webkit-scrollbar {
+        height: 5px;
+        width: 5px;
+        background: var(--colors-grey);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--colors-sasf-white);
+        -webkit-border-radius: 1ex;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: var(--colors-grey);
+    }
+
+    html {
+        visibility: hidden;
+        overflow-x: hidden;
+    }
+
+    html.light,
+    html.dark {
+        visibility: visible;
+    }
+
+}

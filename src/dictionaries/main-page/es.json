@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "heading": "Transformamos tus ideas en soluciones tecnológicas que impulsan tu futuro.",
+    "description": "En Sudamericana de Software S.A. creamos software a medida, aplicaciones móviles y soluciones innovadoras para potenciar la transformación digital de tu empresa."
+  },
+  "legend": {
+    "title": "Con el software correcto, ocurren grandes cosas",
+    "description": "Potencia tu creatividad y productividad con herramientas diseñadas para impulsar tus ideas al siguiente nivel. Optimiza tu flujo de trabajo con tecnología avanzada, eficiente y confiable.Soluciones digitales con un diseño intuitivo, alto rendimiento y compatibilidad total."
+  },
+  "links": [
+    {
+      "label": "Producto",
+      "status": true,
+      "href": "/#product-section"
+    },
+    {
+      "label": "Caracterísitcas",
+      "status": true,
+      "href": "/#characteristics-section"
+    }
+  ],
+  "productos": {
+    "title": "Lo que ofrecemos",
+    "description": "Siempre apuntamos a resolver cada una de tus necesidades",
+    "benefits": [
+      {
+        "image": "/benef1.png",
+        "title": "Flujos que funcionan",
+        "description": "Optimiza cada proceso y mejora la eficiencia con flujos diseñados para funcionar sin interrupciones."
+      },
+      {
+        "image": "/benef2.png",
+        "title": "Solución integral",
+        "description": "Desde la estrategia hasta la ejecución, ofrecemos soluciones completas adaptadas a tus necesidades específicas."
+      },
+      {
+        "image": "/benef3.png",
+        "title": "Asistencia integral al cliente",
+        "description": "Te acompañamos en cada paso, brindando soporte personalizado y respuestas rápidas a tus inquietudes."
+      },
+      {
+        "image": "/benef4.png",
+        "title": "Redes de automatización",
+        "description": "Transforma la gestión de procesos con tecnología avanzada que automatiza tareas clave y potencia tu crecimiento."
+      }
+    ]
+  },
+  "navbar": {
+    "solicitarDemo": "Solicitar Demo"
+  },
+  "footer": {
+    "description": "En Sudamericana de Software S.A. creamos software a medida, aplicaciones móviles y soluciones innovadoras para potenciar la transformación digital de tu empresa.",
+    "copyright": "Sudamericana de Software S.A. Todos los derechos reservados."
+  }
+}

@@ -39,7 +39,7 @@ export const scrollTopStyles = css({
     position: 'fixed',
     bottom: '2rem',
     right: '2rem',
-    backgroundColor: 'sasfWhite',
+    backgroundColor: 'white',
     color: 'black',
     width: '2.5rem',
     height: '2.5rem',

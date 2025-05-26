@@ -1,21 +1,43 @@
-import { linkItems, socialLinks } from "../../constants/nav-footer.ts";
+import { socialLinks } from "../../constants/nav-footer.ts";
 import React from "react";
 import { css } from "../../../styled-system/css";
 import LanguageSwitcher from "../common/languageSwithcher.tsx";
+import { container } from "../../../styled-system/patterns/container";
 
 type footerProps = {
-    className?: string;
-    description: string;
-    copyright: string;
+    links: {
+        label: string;
+        status: boolean;
+        href: string;
+    }[]
+    footer: {
+        description: string;
+        copyright: string;
+    }
 };
 
-export default function Footer(contenido: footerProps) {
+export default function Footer({ links, footer }: footerProps) {
 
     return (
-        <footer className={contenido.className + footerStyles}>
-            <div className={"content"}>
+        <footer className={footerStyles}>
+            <div className={container({
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "2rem",
+
+                "& .center": {
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    flexDirection: "column",
+                },
+
+                md: {
+                    gridTemplateColumns: "1fr 1fr 1fr",
+                },
+            },)}>
                 <div>
-                    <p className={"description"}>{contenido.description}</p>
+                    <p className={"description"}>{footer.description}</p>
                 </div>
                 <div className="center">
                     <a href="/" className={"logo"}>
@@ -44,12 +66,12 @@ export default function Footer(contenido: footerProps) {
                 >
                     <div>
                         <ul className={"navLinks"}>
-                            {linkItems.slice(0, 3).map((item) => (
+                            {links.slice(0, 3).map((item) => (
                                 <React.Fragment key={item.href}>
                                     {item.status && (
                                         <li>
                                             <a href={item.href} className={"navLink"}>
-                                                {"t(item.label)"}
+                                                {item.label}
                                             </a>
                                         </li>
                                     )}
@@ -59,12 +81,12 @@ export default function Footer(contenido: footerProps) {
                     </div>
                     <div>
                         <ul className={"navLinks"}>
-                            {linkItems.slice(3).map((item) => (
+                            {links.slice(3).map((item) => (
                                 <React.Fragment key={item.href}>
                                     {item.status && (
                                         <li>
                                             <a href={item.href} className={"navLink"}>
-                                                {"t(item.label)"}
+                                                {item.label}
                                             </a>
                                         </li>
                                     )}
@@ -76,7 +98,7 @@ export default function Footer(contenido: footerProps) {
             </div>
 
             <div className={"copyright"}>
-                © {new Date().getFullYear()} {"COPY"}
+                © {new Date().getFullYear()} {footer.copyright}
                 <div className={css({ "display": 'flex' })}>
                     <LanguageSwitcher />
                 </div>
@@ -90,23 +112,7 @@ export const footerStyles = css({
     bg: "gray.900",
     color: "white",
     padding: "3rem 0rem 1rem",
-    transition: "all 0.5s",
-    "& .content": {
-        display: "grid",
-        gridTemplateColumns: "1fr",
-        gap: "2rem",
-
-        "& .center": {
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-        },
-
-        md: {
-            gridTemplateColumns: "1fr 1fr 1fr",
-        },
-    },
+    transition: "all 0.2s",
 
     "& .logo": {
         width: "7.5rem",

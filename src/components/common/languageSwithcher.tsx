@@ -1,5 +1,4 @@
 'use client';
-import Cookies from 'js-cookie';
 import { hstack } from '../../../styled-system/patterns';
 import { css } from '../../../styled-system/css';
 import { useEffect, useState } from 'react';
@@ -21,7 +20,7 @@ export default function LanguageSwitcher({
         const pathWithoutLocale = currentPath.replace(/^\/[a-z]{2}(-[A-Z]{2})?/, '');
         const newPath = `/${newLocale}${pathWithoutLocale}`;
 
-        Cookies.set('len', newLocale);
+        localStorage.setItem('len', newLocale);
         window.location.href = newPath;
     };
 
@@ -49,7 +48,6 @@ export default function LanguageSwitcher({
             className={hstack({
                 gap: '1rem',
                 fontWeight: 'light',
-                color: 'GrayText',
             })}
         >
             <button

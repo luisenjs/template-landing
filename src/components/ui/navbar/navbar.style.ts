@@ -1,29 +1,24 @@
 import { css } from '../../../../styled-system/css';
+import { container } from '../../../../styled-system/patterns';
 
 export const containerStyles = css({
-  position: 'fixed',
+  position: 'fixed!',
   top: 0,
-  left: 0,
-  right: 0,
-  zIndex: 5,
+  zIndex: "100",
+  width: 'screen',
   minHeight: '4rem',
-  transition: 'all 0.3s ease',
-  py: "1rem",
-  px: "2rem",
+  transition: 'all 0.2s ease',
+  paddingTop: '1rem',
+  paddingBottom: '1rem',
   backgroundColor: 'navbar',
-  backdropFilter: 'blur(10px)',
-  boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+  backdropFilter: "blur(20px)!",
+  boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
 });
 
-export const navbarStyles = css({
+export const navbarStyles = container({
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-
-  '& .logo': {
-    position: 'relative',
-    height: 'auto',
-  },
 
   '& .navOptions': {
     display: 'flex',
@@ -86,66 +81,3 @@ export const navbarStyles = css({
   },
 });
 
-export const navbarMobileStyles = css({
-  '& .burgerButton': {
-    background: 'none',
-    border: 'none',
-    color: 'white',
-    cursor: 'pointer',
-    padding: '0.5rem',
-
-    mdDown: {
-      display: 'none',
-    },
-  },
-
-  '& .mobileMenu': {
-    display: 'block',
-    position: 'fixed',
-    top: '4.5rem',
-    left: 0,
-    right: 0,
-    backgroundColor: 'navbarMobile',
-    padding: '2rem',
-    transform: 'translateX(100%)',
-    transition: 'transform 0.3s ease',
-    mdDown: {
-      display: 'none',
-    },
-    '@media (max-height: 400px)': {
-      top: '4rem',
-      padding: '1rem',
-    }
-  },
-
-  '& .mobileMenuOpen': {
-    transform: 'translateX(0)',
-  },
-
-  '& .mobileNavLinks': {
-    listStyle: 'none',
-    margin: 0,
-    padding: 0,
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '1.4rem',
-    alignItems: 'center',
-    '@media (max-height: 400px)': {
-      gap: '0.45em',
-    },
-  },
-
-  '& .mobileSocialLinks': {
-    marginTop: '2rem',
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '1.5rem',
-    '@media (max-height: 400px)': {
-      marginTop: '1rem',
-    }
-  },
-
-  mdDown: {
-    display: 'none',
-  },
-});

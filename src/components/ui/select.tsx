@@ -7,6 +7,7 @@ import { css, cva } from '../../../styled-system/css';
 
 export const selectTriggerStyles = cva({
   base: {
+    transition: 'all 0.5s',
     display: 'flex',
     height: 'fit-content',
     width: '100%',
@@ -15,8 +16,8 @@ export const selectTriggerStyles = cva({
     whiteSpace: 'nowrap',
     borderRadius: 'sm',
     border: '1px solid',
-    borderColor: { base: "black", _dark: "white" },
-    color: { base: "black", _dark: "white" },
+    borderColor: "navBorder",
+    color: "navText",
     bg: 'transparent',
     px: '.5rem',
     py: '.1rem',

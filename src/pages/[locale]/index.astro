@@ -1,0 +1,30 @@
+---
+import es from "../../dictionaries/main-page/es.json";
+import en from "../../dictionaries/main-page/en.json";
+import Layout from "../../layout/layout.astro";
+import HeroSection from "../../components/main/hero-section";
+import LegendSection from "../../components/main/legend-section";
+import ProductSection from "../../components/main/product-section";
+import { locales } from "../../constants/pages";
+
+export async function getStaticPaths() {
+  return locales.map((locale) => ({
+    params: { locale },
+  }));
+}
+
+const { locale } = Astro.params;
+const dict = locale === "en" ? en : es;
+---
+
+<Layout>
+  <section id="hero-section">
+    <HeroSection {...dict.hero} />
+  </section>
+  <section id="legend-section">
+    <LegendSection {...dict.legend} />
+  </section>
+  <section id="product-section">
+    <ProductSection client:load {...dict.productos} />
+  </section>
+</Layout>

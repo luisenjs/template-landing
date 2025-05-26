@@ -1,11 +1,11 @@
 ---
-import "../index.css";
+import "../style/index.css";
 import { css } from "../../styled-system/css";
 import Navbar from "../components/ui/navbar/navbar.tsx";
 import Footer from "../components/ui/footer.tsx";
 import { BackToTop } from "../components/common/back-to-top.tsx";
-import es from "../dictionaries/landing-page/es.json";
-import en from "../dictionaries/landing-page/en.json";
+import es from "../dictionaries/main-page/es.json";
+import en from "../dictionaries/main-page/en.json";
 
 const { locale } = Astro.params;
 const dict = locale === "en" ? en : es;
@@ -19,14 +19,21 @@ const rubik = "--font-rubik";
     <title>SASF</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.classList.add(savedTheme);
+      })();
+    </script>
   </head>
   <body
-    class={`${poppins} ${rubik} ${css({ bg: { base: "white", _dark: "black" }, transition: "all 0.5s" })}`}
+    class={`${poppins} ${rubik} ${css({ bg: "bgColor", transition: "all 0.2s" })}`}
   >
-    <Navbar client:load />
+    <Navbar client:load links={dict.links} />
     <main class={`scroller ${css({ minHeight: "100vh" })}`}>
       <slot />
-      <Footer client:load {...dict["footer"]} />
+      <Footer client:load links={dict.links} footer={dict.footer} />
       <BackToTop client:load />
     </main>
   </body>

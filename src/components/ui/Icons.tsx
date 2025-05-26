@@ -4,7 +4,7 @@ export interface IconsProps extends React.ComponentProps<'svg'> {
 }
 
 export const Icon = {
-  X: ({ color = 'black', ...props }: IconsProps) => {
+  X: ({ color, ...props }: IconsProps) => {
     return (
       <svg
         width="100%"
@@ -15,7 +15,7 @@ export const Icon = {
         {...props}>
         <path
           d="M301.026 37.125H355.608L236.362 173.415L376.645 358.875H266.805L180.774 246.395L82.335 358.875H27.72L155.265 213.098L20.691 37.125H133.32L211.084 139.937L301.026 37.125ZM281.869 326.205H312.114L116.886 68.079H84.4305L281.869 326.205Z"
-          fill={color}
+          fill="currentColor"
         />
       </svg>
     );
