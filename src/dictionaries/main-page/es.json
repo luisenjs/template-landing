@@ -12,11 +12,6 @@
       "label": "Producto",
       "status": true,
       "href": "/#product-section"
-    },
-    {
-      "label": "Caracterísitcas",
-      "status": true,
-      "href": "/#characteristics-section"
     }
   ],
   "productos": {

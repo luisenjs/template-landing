@@ -5,43 +5,38 @@
   },
   "legend": {
     "title": "With the right software, greate things happen",
-    "description": "Description"
+    "description": "Boost your creativity and productivity with tools designed to take your ideas to the next level. Optimize your workflow with advanced, efficient, and reliable technology. Digital solutions with an intuitive design, high performance, and total compatibility."
   },
   "links": [
     {
       "label": "Product",
       "status": true,
       "href": "/#product-section"
-    },
-    {
-      "label": "Characteristics",
-      "status": true,
-      "href": "/#characteristics-section"
     }
   ],
   "productos": {
-    "title": "Lo que ofrecemos",
-    "description": "Siempre apuntamos a resolver cada una de tus necesidades",
+    "title": "What We Offer",
+    "description": "We always strive to address each of your needs.",
     "benefits": [
       {
         "image": "/benef1.png",
         "title": "Flujos que funcionan",
-        "description": "Optimiza cada proceso y mejora la eficiencia con flujos diseñados para funcionar sin interrupciones."
+        "description": "Optimize every process and enhance efficiency with workflows designed to function seamlessly."
       },
       {
         "image": "/benef2.png",
         "title": "Solución integral",
-        "description": "Desde la estrategia hasta la ejecución, ofrecemos soluciones completas adaptadas a tus necesidades específicas."
+        "description": "From strategy to execution, we provide complete solutions tailored to your specific needs."
       },
       {
         "image": "/benef3.png",
         "title": "Asistencia integral al cliente",
-        "description": "Te acompañamos en cada paso, brindando soporte personalizado y respuestas rápidas a tus inquietudes."
+        "description": "We support you at every step, offering personalized assistance and prompt responses to your inquiries."
       },
       {
         "image": "/benef4.png",
         "title": "Redes de automatización",
-        "description": "Transforma la gestión de procesos con tecnología avanzada que automatiza tareas clave y potencia tu crecimiento."
+        "description": "Transform process management with advanced technology that automates key tasks and drives your growth."
       }
     ]
   },

@@ -1,5 +1,5 @@
 ---
-import { vstack } from "../../../../styled-system/patterns";
+import { container, vstack } from "../../../../styled-system/patterns";
 import { beneficios, locales } from "../../../constants/pages";
 import Layout from "../../../layout/layout.astro";
 import es from "../../../dictionaries/benefits-page/es.json";
@@ -20,26 +20,28 @@ const dict = locale === "en" ? en : es;
 ---
 
 <Layout>
-  <section
-    class={vstack({ h: "100vh", display: "flex", justifyContent: "center" })}
-  >
-    <div>
-      <p
-        class={css({
-          color: "text",
-          transition: "all 0.2s",
-          fontSize: "6xl",
-          fontWeight: 700,
-        })}
-      >
-        {dict[beneficio].title.toUpperCase()}
-      </p>
-    </div>
-    <div class={css({ h: "1/2" })}>
-      <Spline
-        client:load
-        scene="https://prod.spline.design/3cCJw4hOTLwiGeZK/scene.splinecode"
-      />
+  <section class={container()}>
+    <div
+      class={vstack({ h: "100vh", display: "flex", justifyContent: "center" })}
+    >
+      <div>
+        <p
+          class={css({
+            color: "text",
+            transition: "all 0.2s",
+            fontSize: { base: "2xl", md: "6xl" },
+            fontWeight: 700,
+          })}
+        >
+          {dict[beneficio].title.toUpperCase()}
+        </p>
+      </div>
+      <div class={css({ h: "1/2", maxW: "full" })}>
+        <Spline
+          client:load
+          scene="https://prod.spline.design/3cCJw4hOTLwiGeZK/scene.splinecode"
+        />
+      </div>
     </div>
   </section>
 </Layout>
