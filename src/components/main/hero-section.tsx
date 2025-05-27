@@ -51,7 +51,7 @@ export default function HeroSection(contenido: Content) {
                 <div className={css({ display: { base: "none", md: "block" }, w: { base: "full", md: "1/2" } })}>
                     <FlipCard front={
                         <CardContent className={css({ width: "full", display: "flex", flexDir: "column", gap: "5", py: "6" })}>
-                            <img src="hero.svg" alt="hero image" />
+                            <img src="/hero.svg" alt="hero image" />
                         </CardContent>
                     } back={
                         <CardContent className={css({ width: "full", display: "flex", flexDir: "column", gap: "5", py: "6" })}>

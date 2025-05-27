@@ -1,9 +1,21 @@
 <html lang="en">
     <head>
         <meta http-equiv="refresh" content="0; URL=/es" />
-        <script>
+        <script is:inline>
             const userLang = navigator.language.startsWith("en") ? "en" : "es";
             window.location.replace(`/${userLang}`);
+            localStorage.setItem("len", userLang);
+            const prefersDark = window.matchMedia(
+                "(prefers-color-scheme: dark)",
+            ).matches;
+            const savedTheme = localStorage.getItem("theme");
+            if (!savedTheme) {
+                const theme = prefersDark ? "dark" : "light";
+                localStorage.setItem("theme", theme);
+                document.documentElement.classList.add(theme);
+            } else {
+                document.documentElement.classList.add(savedTheme);
+            }
         </script>
     </head>
 </html>
